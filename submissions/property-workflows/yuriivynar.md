@@ -38,3 +38,30 @@
 ## Бонус
 
 Цикл візуальної перевірки в браузері агента (Playwright MCP) — PR https://github.com/yuriivynar/property-workflows/pull/13, розділ «Бонус»: агент зняв 5 сторінок у світлій і темній темі, порівняв з `DESIGN.md` і знайшов відхилення, якого не ловить `check:design`: посилання мали колір акценту (`text-primary` — формально токен), тож головна дія губилась серед них, а «Вигляд і тон» відводить акцент лише головній дії. Виправлено (`TextLink` — колір тексту), правило записано в `DESIGN.md`, знімки до/після — у PR. Висновок: скрипт перевіряє синтаксис (токен чи ні), а браузерна перевірка — зміст (той токен чи ні); дизайн-системі потрібні обидві.
+
+## Після строку (для інформації; оцінюється SHA вище)
+
+Усі завдання WS7 виконано в строк, на SHA `6bc21cd712f5e2e5bfef55cd8f0e546261afd419` (27.10). PM відповів на питання
+до вимог лише 27.10 о 12:09–12:11 за Києвом, тобто в день строку
+(issues #21–#38 у https://github.com/solomchaak/property-workflows-spec). Відповіді змінили 2 AC і додали
+24 нові (AC-EDITOR-10–29, AC-DSYS-05–08).
+
+Того ж дня зроблено:
+- синхронізацію вимог — https://github.com/yuriivynar/property-workflows/pull/21;
+- переклад у специфікацію — https://github.com/yuriivynar/property-workflows/pull/22;
+- реалізацію 14 нових AC — https://github.com/yuriivynar/property-workflows/pull/23,
+  https://github.com/yuriivynar/property-workflows/pull/24.
+
+Решту 10 AC на SHA здачі позначено «відкладено» з причиною й посиланням на issue PM.
+
+28.10, вже після строку, ці 10 AC реалізовано за процесом:
+- план `impl-clarify-template-versions` — https://github.com/yuriivynar/property-workflows/pull/25;
+- задачі — https://github.com/yuriivynar/property-workflows/pull/26, https://github.com/yuriivynar/property-workflows/pull/27, https://github.com/yuriivynar/property-workflows/pull/28, https://github.com/yuriivynar/property-workflows/pull/29, https://github.com/yuriivynar/property-workflows/pull/30, https://github.com/yuriivynar/property-workflows/pull/31;
+- знімки вибору теми й archive плану — https://github.com/yuriivynar/property-workflows/pull/33.
+
+Окремо:
+- патч безпеки Next.js 16.4.0 → 16.4.3 (critical RCE; ADR 0005) — https://github.com/yuriivynar/property-workflows/pull/32;
+- `zod` 4.6.7 (ADR 0006) — https://github.com/yuriivynar/property-workflows/pull/34.
+
+Стан `main` після цього — `5c4ef5bda555b91a524d2e2918bb687892262b5b`: 67 з 67 AC «реалізовано»
+(https://github.com/yuriivynar/property-workflows/blob/5c4ef5bda555b91a524d2e2918bb687892262b5b/docs/conformance.md).
